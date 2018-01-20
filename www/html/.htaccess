@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.\*)$ http://wifiportal.telenet.e/login.html [R=301,L]
